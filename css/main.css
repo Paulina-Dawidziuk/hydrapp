@@ -322,7 +322,18 @@ html {
 body {
   color: white;
   font-family: Roboto;
-  font-weight: 500; }
+  font-weight: 500;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px; }
 
 .heading {
   font-size: 55px;
@@ -330,8 +341,8 @@ body {
   padding: 0 0 64px 0; }
 
 .counter {
-  width: 200px;
-  height: 200px;
+  width: 215px;
+  height: 280px;
   background: url("../assets/img/water-glass.svg") center center;
   background-size: contain;
   display: -webkit-box;
@@ -345,5 +356,39 @@ body {
           justify-content: center;
   color: black;
   font-size: 112px; }
+  .counter__value {
+    padding-top: 64px;
+    display: block; }
+
+.button-add {
+  padding: 12px;
+  font-size: 18px;
+  color: black;
+  border-radius: 4px;
+  border: none;
+  background: white;
+  min-width: 216px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 48px 0 26px; }
+
+.button-remove {
+  background: none;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  color: white; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*# sourceMappingURL=main.css.map */
